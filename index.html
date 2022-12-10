@@ -16,36 +16,32 @@
   </head>
   <body>
     <header class="header">
-      <section class="section-header">
-        <div class="container">
-          <a class="header-logo" href="./index.html"
-            ><span class="logo-span">Web</span>Studio</a
+      <div class="container section-header">
+        <a class="header-logo" href="./index.html"
+          ><span class="logo-span">Web</span>Studio</a
+        >
+        <nav>
+          <ul class="navigation">
+            <li class="navigation-item">
+              <a class="navigation-link" href="./index.html">Studio</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="./potfolio.html">Portfolio</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="contacts-link">
+          <a class="contacts-email" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
           >
-          <nav>
-            <ul class="navigation">
-              <li class="navigation-item">
-                <a class="navigation-link" href="./index.html">Studio</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="./potfolio.html">Portfolio</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">Contacts</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="contacts">
-            <address class="contacts-link">
-              <a class="contacts-email" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-              <a class="contacts-tel" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </address>
-          </div>
-        </div>
-      </section>
+          <a class="contacts-tel" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </address>
+      </div>
     </header>
     <main>
       <h1 class="visually-hidden">Main</h1>
@@ -88,6 +84,9 @@
               </p>
             </li>
           </ul>
+        </section>
+        <section class="section-features">
+          <div class="container">
           <h2 class="big-text">What are we doing</h2>
           <ul class="main-images">
             <li>
@@ -120,7 +119,7 @@
       <section class="team">
         <div class="container">
           <h2 class="team-text">Our team</h2>
-          <ul class="team">
+          <ul class="teams">
             <li class="team-block">
               <img
                 src="./images/mark.jpg"
@@ -128,8 +127,10 @@
                 width="264px"
                 height="260px"
               />
+            <div class="team-text-block">
               <h3 class="team-text-h">Mark Guerrero</h3>
               <p class="team-text-p">Product Designer</p>
+            </div>
             </li>
             <li class="team-block">
               <img
@@ -138,9 +139,11 @@
                 width="264px"
                 height="260px"
               />
+            <div class="team-text-block">
               <h3 class="team-text-h">Tom Ford</h3>
               <p class="team-text-p">Frontend developer</p>
-            </li>
+            </div>
+          </li>
             <li class="team-block">
               <img
                 src="./images/cami.jpg"
@@ -148,9 +151,11 @@
                 width="264px"
                 height="260px"
               />
+            <div class="team-text-block">
               <h3 class="team-text-h">Camila Garcia</h3>
               <p class="team-text-p">Marketing</p>
-            </li>
+            </div>
+          </li>
             <li class="team-block">
               <img
                 src="./images/daniel.jpg"
@@ -158,15 +163,16 @@
                 width="264px"
                 height="260px"
               />
+            <div class="team-text-block">
               <h3 class="team-text-h">Daniel Wilson</h3>
               <p class="team-text-p">UI Designer</p>
-            </li>
+            </div>
+          </li>
           </ul>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <section class="section-footer">
         <div class="container">
           <div class="footer-block">
             <a class="footer-logo" href="./index.html"
@@ -178,7 +184,6 @@
             </p>
           </div>
         </div>
-      </section>
     </footer>
   </body>
 </html>

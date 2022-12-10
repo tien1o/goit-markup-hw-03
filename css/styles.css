@@ -27,7 +27,7 @@ body {
   letter-spacing: 0.02;
   font-family: "Roboto", sans-serif;
   background-color: var(--white);
-  color: var(--navyblue);
+  color: var(--navy-blue);
 }
 
 h1,
@@ -72,7 +72,10 @@ button {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-
+.section-header {
+  display: flex;
+  align-items: center;
+}
 .container {
   width: 1158px;
   margin: 0 auto;
@@ -80,7 +83,7 @@ button {
 }
 
 .header {
-  padding: 24px;
+  padding: 24px 0;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -94,7 +97,7 @@ button {
 }
 
 nav {
-  display: inline-block;
+  margin-left: 77px;
 }
 
 .header-logo .logo-span {
@@ -103,7 +106,6 @@ nav {
 
 .navigation {
   display: flex;
-  padding-left: 77px;
   gap: 40px;
 }
 
@@ -123,17 +125,9 @@ nav {
   color: var(--iris);
 }
 
-.contacts {
-  display: inline-block;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
-
 .contacts-link {
-  padding-left: 300px;
   display: flex;
+  margin-left: auto;
   gap: 40px;
 }
 
@@ -187,9 +181,11 @@ nav {
   background-color: var(--button-animation);
 }
 
+.text-blocks {
+  padding: 120px 0;
+}
 .text-box {
   display: flex;
-  padding: 120px 0;
   gap: 24px;
 }
 
@@ -224,35 +220,42 @@ nav {
   text-transform: capitalize;
   color: var(--navy-blue);
 }
+.sectiom-features {
+  padding-bottom: 120px;
+}
 
 .main-images {
   display: flex;
-  margin-bottom: 120px;
+  padding-bottom: 120px;
   gap: 24px;
 }
 
 .team {
+  padding: 120px 0;
+  background-color: var(--corn-flower);
+}
+.teams {
   display: flex;
   gap: 24px;
   text-align: center;
-  background-color: var(--cloud);
 }
 
 .team-text {
-  margin-top: 120px;
   margin-bottom: 72px;
   font-weight: 600;
+  text-align: center;
   font-size: 36px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--navy-blue);
 }
-
+.team-text-block {
+  padding: 32px;
+}
 .team-text-h {
-  padding-top: 32px;
   margin-bottom: 8px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -268,16 +271,15 @@ nav {
 
 .team-block {
   width: 264px;
-  height: 380px;
-  margin-bottom: 120px;
   background-color: #ffffff;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
 
-.section-footer {
+.footer {
   background-color: var(--navy-blue);
+  padding: 100px 0;
 }
 
 .footer-block {
