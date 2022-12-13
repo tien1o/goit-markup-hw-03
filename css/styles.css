@@ -8,6 +8,7 @@
   --cloud: #f4f4fd;
   --navy-blue: #2e2f42;
   --button-animation: #404bbf;
+  --icon-hover: #31d0aa;
 }
 .visually-hidden {
   position: absolute;
@@ -72,10 +73,12 @@ button {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
 .section-header {
   display: flex;
   align-items: center;
 }
+
 .container {
   width: 1158px;
   margin: 0 auto;
@@ -148,7 +151,16 @@ nav {
 }
 
 .section-solutions {
-  background-color: var(--navy-blue);
+  max-width: 1440px;
+  height: 603px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 192px 0;
 }
 
@@ -181,9 +193,23 @@ nav {
   background-color: var(--button-animation);
 }
 
+.text-block-svgs {
+  padding: 24px;
+  margin-bottom: 8px;
+  text-align: center;
+  background-color: var(--cloud);
+  border-radius: 4px;
+}
+
+.icons-text-block {
+  width: 64px;
+  height: 64px;
+}
+
 .text-blocks {
   padding: 120px 0;
 }
+
 .text-box {
   display: flex;
   gap: 24px;
@@ -220,6 +246,7 @@ nav {
   text-transform: capitalize;
   color: var(--navy-blue);
 }
+
 .sectiom-features {
   padding-bottom: 120px;
 }
@@ -234,6 +261,7 @@ nav {
   padding: 120px 0;
   background-color: var(--corn-flower);
 }
+
 .teams {
   display: flex;
   gap: 24px;
@@ -250,11 +278,14 @@ nav {
   text-transform: capitalize;
   color: var(--navy-blue);
 }
+
 .team-text-block {
   padding: 32px;
+  padding-bottom: 0;
 }
+
 .team-text-h {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
@@ -263,6 +294,7 @@ nav {
 }
 
 .team-text-p {
+  margin-bottom: 8px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -272,9 +304,80 @@ nav {
 .team-block {
   width: 264px;
   background-color: #ffffff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-block:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 0px 0px 4px 4px;
+}
+
+.team-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 0 auto;
+  padding-bottom: 32px;
+}
+
+.teams-btn {
+  padding: 12px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--iris);
+  border-radius: 100px;
+}
+
+.teams-btn:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.icon-teams {
+  width: 16px;
+  height: 16px;
+  color: var(--cloud);
+}
+
+.customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.customers-text {
+  margin-bottom: 72px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--navy-blue);
+}
+
+.customers-icons {
+  display: flex;
+  gap: 24px;
+}
+
+.customers-border {
+  padding: 16px 32px;
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+
+.customers-svg {
+  display: flex;
+  margin: 0 auto;
+  width: 104px;
+  height: 56px;
+}
+
+.section-footer {
+  display: flex;
 }
 
 .footer {
@@ -307,6 +410,42 @@ nav {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--corn-flower);
+}
+
+.media-links {
+  display: block;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-left: 120px;
+  gap: 40px;
+}
+
+.social-media-text {
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.footer-buttons {
+  display: flex;
+  gap: 24px;
+  margin: 0 auto;
+}
+
+.icon-footer {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-btn {
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-btn:hover {
+  background-color: var(--icon-hover);
 }
 
 .buttons {
@@ -352,11 +491,14 @@ nav {
   display: block;
   width: 360px;
   height: 420px;
-  /* margin-bottom: 120px; */
   background-color: #ffffff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.projects-block:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 0px 0px 4px 4px;
 }
 
 .projects-block:nth-child(3n) {
@@ -380,4 +522,45 @@ nav {
   font-size: 16px;
   line-height: 1.5;
   color: var(--slate);
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-client1 {
+  width: 1.9091796875em;
+}
+
+.icon-client2 {
+  width: 1.9091796875em;
+}
+
+.icon-client3 {
+  width: 1.9091796875em;
+}
+
+.icon-client4 {
+  width: 1.9091796875em;
+}
+
+.icon-client5 {
+  width: 1.9091796875em;
+}
+
+.icon-client6 {
+  width: 1.9091796875em;
 }
